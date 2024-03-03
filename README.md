@@ -367,7 +367,7 @@ Figure 4 provide the temperature during the distribution of coupon offer campaig
 
 
 
-! [AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature.png) 
+![AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature.png) 
 
 **Figure 4 - Temperature during coupon offer campaigns**
 
@@ -377,7 +377,7 @@ Figure 5-a provides a view of the accepted/rejected coupons and the associated t
 
 
 
-! [AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature_accept_reject.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature_accept_reject.png) 
+![AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature_accept_reject.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature_accept_reject.png) 
 
 **Figure 5-a - Distribution of accepted/rejected coupons and associated temperature.**
 
