@@ -356,7 +356,7 @@ In this section, the results of exploring and visualizing insight from the data 
 
 
 
-### 4.1.1 Coupon Campaigns & Temperature
+### 4.1.1 Temperature During Campaigns
 
 Figure 4 provide the temperature during the distribution of coupon offer campaigns.
 
@@ -389,6 +389,75 @@ Figure 6 provides a view of the types of coupons that were offered and the assoc
 From the figures above, the number of coupon offered increase with the temperature. This indicates that as the weather warmed up, the outdoor activity increased. And as a result, there were more participents outside accepting offers. 
 
 
+
+### 4.1.2 Addressing Bar Coupon related Business Questions
+
+Following were some of the business questions answered based on the analysis of the data.
+
+**1) What the acceptance rate between those who went to a bar 3 or fewer times a month to those who went more.**
+
+- Acceptance rate of participants that went to a bar no more than three times are:  **5.31%** 
+
+- Acceptance rate of participants that went to a bar more than three time are:  **1.22%** 
+- The ratio between the participants who when to the bar no more than three time to the one who went more than three times is:  **4.34** 
+- The acceptance rate of participants who when to the bar no more than three time is **'~4.34'** times than  the participants that went to a bar more than three time.
+
+**2) What the acceptance rate between drivers who go to a bar more than once a month and are over the age of 25 to the all others.  Is there a difference?**
+
+- Acceptance rate of participants (drivers) over the age of twenty five who went to a bar more than once a month are:        **2.32%** 
+
+- Acceptance rate of all other participants:  **4.22%** 
+
+- The ratio between drivers who go to a bar more than once a month and are over the age of 25 to the all others are:  **0.5483** 
+
+- The acceptance rate of the participants (drivers) who go to a bar more than once a month and are over the age of 25 is  about **'~1/2'** times to that of the others. Yes there is a difference, i.e., their total rate is the same as the Bar coupon acceptance rate.
+
+  
+
+**3) Compare the acceptance rate between drivers who go to bars more than once a month and had passengers that were not a kid and had occupations other than farming, fishing, or forestry. **
+
+- Acceptance rate of drivers who go to bars more than once a month and had passengers that were not a kid:  **3.13%** 
+
+- Acceptance rate of drivers who go to bars more than once a month and had passengers that were not a kid  and had occupations other than farming, fishing, or forestry:  **3.26%** 
+
+- The ratio between the two:  **0.9592** 
+
+- The acceptance rate of the participants (drivers) who go to bars more than once a month and had passengers  that were not a kid is about **'~1'** times to that of drivers that had occupations other than farming, fishing, or forestry.
+
+  
+
+**4) Compare the acceptance rates between those drivers who:**
+
+​	a. go to bars more than once a month, had passengers that were not a kid, and were not widowed ****OR**** 
+
+​	b. go to bars more than once a month and are under the age of 30 ****OR****
+
+​	c. go to cheap restaurants more than 4 times a month and income is less than 50K. 
+
+- The acceptance rate of the drivers who go to bars more than once a month, had passengers that were not a kid, and were not widowed:  **3.13%** 
+- The acceptance rate of the drivers who go to bars more than once a month and are under the age of 30:  **1.97%** 
+- The acceptance rate of the drivers who go to cheap restaurants more than 4 times a month and income is less than 50K:  **1.27%** 
+- The acceptance rate of the drivers who go to bars more than once a month, had passengers that were not a kid,  and were not widowed is about **'~1.6'** times more to that of the drivers that go to bars more than once a month and are under the age of 30. 
+- The acceptance rate of the drivers who go to bars more than once a month, had passengers that were not a kid, and were not widowed  is about **'~2.5'** times more to that of drivers that go to cheap restaurants more than 4 times a month and income is less than 50. 
+- The acceptance rate of the drivers who go to bars more than once a month and are under the age of 30 is **'~1.6'** time to that of drivers  that go to cheap restaurants more than 4 times a month and income is less than 50.
+
+
+
+### 4.1.3 Identification of Opportunities Based on Deep Data Analysis 
+
+Initial analysis of the data showed that the "Bar" performed poorly, i.e, the rejection rate was much higher then the acceptance rate. The "CarryAway" coupon acceptance to rejection rate was the best performer in the entire coupon catagories. Based on this observation, the following strategy was defined:
+
+a) Study the "CarryAway" coupon type to help identify opportunities to improve coupon acceptance rate across all coupon categories
+
+b) Base on the correlation results, identify the characteristics/features of the passenger/driver who accepted the coupon.
+
+c) Identify opportunities to increase acceptance rate by examining the conditional probability of acceptance/rejections; where the conditions derived base on the combination of one or more characteristics/features of the driver/passenger.
+
+
+
+### 4.1.3.1 Passanger/Driver Attribute Identify 
+
+Identify attributes associated with passenger's/driver's characteristics "CarryAway" coupon for study, using the correlation approach.
 
 
 
