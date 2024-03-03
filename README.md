@@ -30,6 +30,21 @@ Figure 2 provides a view of the distribution of the coupons offered to participa
 
 
 
+![bar_accept_reject_coupon_types_dist.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/bar_accept_reject_coupon_types_dist.png) 
+
+Figure 3 - 
+
+
+
+In summary, our business problem is:
+
+- We have stagnant profit because the number of sales is constant
+- There are a lot of customer leads but we can’t reach all of them
+- We need to know which customer leads that should be prioritized
+- We need lead scoring so that we can be efficent on targeting potential buyer
+
+
+
 
 
 
