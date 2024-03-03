@@ -85,7 +85,7 @@ The information about the structure of the data including:
 
 
 
-The collected data consists of **12684**responses with **26** attributes/columns. The description of each column/variable can be seen below:
+The collected data consists of **12684** responses with **26** attributes/columns. The description of each column/variable can be seen below:
 
 **DataFrame:
      RangeIndex: 12684 entries, 0 to 12683
@@ -282,35 +282,25 @@ Following is the summary statistics (mean, median, min, max, etc.) of the data:
 
 Following is the catagory of each column that is of type object:
 
-**destination                                   [No Urgent Place, Home, Work]
-passanger                             	[Alone, Friend(s), Kid(s), Partner]
-weather                                         [Sunny, Rainy, Snowy]
-time                                               [2PM, 10AM, 6PM, 7AM, 10PM]
-coupon                  		       [Restaurant(<20), Coffee House, Carry out & Ta...
-expiration                                     [1d, 2h]
-gender                                           [Female, Male]
-age                             		    [21, 46, 26, 31, 41, 50plus, 36, below21]
-maritalStatus           		    [Unmarried partner, Single, Married partner, D...
-education               		      [Some college - no degree, Bachelors degree, A...
-occupation              		     [Unemployed, Architecture & Engineering, Stude...
-income                  		       [$37500 - $49999, $62500 - $74999, $12500 - $2...
-car                     			    [nan, Scooter and motorcycle, crossover, Mazda...
-Bar                                    	    [never, less1, 1~3, gt8, nan, 4~8]
-CoffeeHouse                               [never, less1, 4~8, 1~3, gt8, nan]
-CarryAway                                   [nan, 4~8, 1~3, gt8, less1, never]
-RestaurantLessThan20             [4~8, 1~3, less1, gt8, nan, never]
-Restaurant20To50                     [1~3, less1, never, gt8, 4~8, nan]**
+
 
 
 
 Following is the percentage of missing values per column:
 
-**car                     		     99.15%
-Bar                      	            0.84%
-CoffeeHouse                        1.71%
-CarryAway                           1.19%
-RestaurantLessThan20    1.02%
-Restaurant20To50             1.49%**
+**car					99.15%**
+
+**Bar					0.84%**
+
+**CoffeeHouse			1.71%**
+
+**CarryAway                           1.19%**
+
+**RestaurantLessThan20    1.02%**
+
+**Restaurant20To50             1.49%**
+
+
 
 Finally, The number of **duplicate rows are 74**.
 
