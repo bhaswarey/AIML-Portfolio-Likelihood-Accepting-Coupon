@@ -32,9 +32,11 @@ Figure 2 provides a view of the distribution of the coupons offered to participa
 
 ![bar_accept_reject_coupon_types_dist.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/bar_accept_reject_coupon_types_dist.png) 
 
+**Figure 3 - Distribution of accepted & rejected coupons by type**
+
+
+
 Figure 3 - provides a view of the distribution accepted and rejected offers across the entire coupon category. The figure highlights the coupon types that have the highest acceptance and rejection rates, providing a view of where improvements are needed.
-
-
 
 
 
@@ -70,7 +72,7 @@ This data comes from the UCI Machine Learning repository and was collected via a
 
 Here is a sample of the data.
 
-![image-20240303004736785.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/image-20240303004736785.png?raw=true)
+![original.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/original.png?raw=true)
 
 
 
@@ -404,7 +406,27 @@ After the data clean process was executed, the columns was reduced from **26 to 
 
 ## 3.3 Final Data
 
-![image-20240303004736785.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/image-20240303004736785.png?raw=true)
+![image-20240303004736785.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/image-20240303004736785.png?raw=true)
+
+
+
+# 4 Data Understanding (Deeper Analysis)
+
+Further explore and analyze of the data is conducted in preparation for future machine learning model.
+
+
+
+## 4.1 Exploratory Data Analysis
+
+In this section, the results of exploring and visualizing insight from the data is captured.
+
+
+
+### 4.1.1 Coupon Campaigns & Temperature
+
+Figure 4 provide the temperature distribution covering the coupon offer campaigns.
+
+
 
 
 
