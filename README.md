@@ -503,7 +503,7 @@ Figure 7 provides the relationship between passenger & education/age/children/ma
 
 
 
-
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/histplot_accepted_carryaway_passanger_attributes.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/histplot_accepted_carryaway_passanger_attributes.png) 
 
 **Figure 7 - Relationship between passenger & education/age/children/marital status**
 
@@ -564,35 +564,32 @@ From the conditional probabilities shown in Figure 8, the following is observed:
   **a) Occupation:**
     The types that had the highest acceptance and the lowest rejections are (in no specific order):
 
-    1. Protective Services [0.17, 0.01]
-        
-    1. HealthPractTech [0.17, 0.01]
-        
-    1. ConstructExtraction [0.18, 0.01]
-        
-    1. BldGndCleaningMaintenance [0.2, ~0.0]
-        
-    1. ProdOccup [0.2, 0.03]
-        
-    Note: Selected top five.
+- Protective Services [0.17, 0.01]
+- HealthPractTech [0.17, 0.01]
+- ConstructExtraction [0.18, 0.01]
+- BldGndCleaningMaintenance [0.2, ~0.0]
+- ProdOccup [0.2, 0.03]
+
+Note: Selected top five.
 
   **b) Income:**
     The ranges that had the highest acceptance and the lowest rejections are (in no specific order):
 
-       1. ~$12K [0.15, 0.05], ~18K [0.14, 0.05], ~31K [0.15, 0.04]
-    1. ~56K [14, 0.04]
-        Note: Selected top four
+- ~$12K [0.15, 0.05], ~18K [0.14, 0.05], ~31K [0.15, 0.04]
+- ~56K [14, 0.04]
+  Note: Selected top four
 
   **c) Education:**
     The education level that had the highest acceptance and the lowest rejections are (in no specific order):
 
-       1. Some Highschool [0.17, 0.01]
-    1. Associate degree [0.15, 0.03]
-        Note: Selected top two
+- Some Highschool [0.17, 0.01]
+- Associate degree [0.15, 0.03]
+  Note: Selected top two
 
   **d) MaritalStatus**
     Marital status that had the highest acceptance and the lowest rejections are (in no specific order):
-    1.Widowed [0.16, 0.03]
+
+- Widowed [0.16, 0.03]
 
 Based on these findings from the conditional plots, complex conditionals is defined by taking more than one features/characteristics. This approach will help to understand the interrelationship between these participants with the top acceptance.
 
@@ -663,7 +660,7 @@ Figure 9 provides the results of the following conditional probabilities:
            1. P(A|B)
            2. P(A|C)
            3. P(A|D)
-           4. (A|E)
+           4. P(A|E)
            5. P(A|F)
            6. P(A|G)
            7. P(A|H)
