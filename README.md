@@ -1,6 +1,8 @@
 # Case Study : Conditional Acceptance of Coupon
 
-**[Link to notebook:] ** ![AIML-Portfolio-Likelihood-Accepting-Coupon/prompt.ipynb at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/prompt.ipynb) 
+**[Link to notebook:] ** [AIML-Portfolio-Likelihood-Accepting-Coupon/prompt.ipynb at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/prompt.ipynb) 
+
+
 
 **Context **
 
