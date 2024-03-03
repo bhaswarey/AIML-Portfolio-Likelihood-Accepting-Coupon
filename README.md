@@ -97,7 +97,7 @@ The collected data consists of **12684** responses with **26** attributes/column
 
 **Data columns** (total 26 columns):
 
-
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/table0.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/table0.png) 
 
 
 
