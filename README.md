@@ -336,7 +336,7 @@ Data columns (total 25 columns):
 
 After the data clean process was executed, the columns was reduced from **26 to 25** and the rows were reduced from **12683 to 12007**, i.e., As part of the cleaning process, number of rows are reduced by: **5.33%**.
 
-
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/table3.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/table3.png) 
 
 ## 3.3 Final Data
 
@@ -358,9 +358,35 @@ In this section, the results of exploring and visualizing insight from the data 
 
 ### 4.1.1 Coupon Campaigns & Temperature
 
-Figure 4 provide the temperature distribution covering the coupon offer campaigns.
+Figure 4 provide the temperature during the distribution of coupon offer campaigns.
 
 
+
+! [AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature.png) 
+
+**Figure 4 - Temperature during coupon offer campaigns**
+
+
+
+Figure 5 provides a view of the accepted/rejected coupons and the associated temprature during that day.
+
+
+
+! [AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature_accept_reject.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature_accept_reject.png) 
+
+**Figure 5 - Distribution of accepted/rejected coupons and associated temprature.**
+
+
+
+Figure 6 provides a view of the types of coupons that were offered and the associated temprature of the day.
+
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature_coupons_types.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature_coupons_types.png) 
+
+**Figure 5 - Distribution of types of coupons and associated temprature.**
+
+
+
+From the figures above, the number of coupon offered increase with the temperature. This indicates that as the weather warmed up, the outdoor activity increased. And as a result, there were more participents outside accepting offers. 
 
 
 
