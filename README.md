@@ -20,7 +20,13 @@ Obviously, proximity to the business is a factor on whether the coupon is delive
 
 
 
+ ![bar_coupon_types_dist.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/bar_coupon_types_dist.png) 
 
+**Figure 2 - Distribution of coupons by type**
+
+
+
+Figure 2 provides a view of the distribution of the coupons offered to participants across the different types of business within the hospitality industry. The discribution in Figure 2 shows that the coupon campaign is skewed heavily towards the Coffee House businesses.
 
 
 
