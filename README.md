@@ -699,3 +699,6 @@ Additionally, to further improve the acceptance rate, the analysis based on comp
 
 
 
+### 5.0   Next Steps
+
+Given the insights from the data analysis and the conditional probability approach taken, we are not ready to enter the next phase to start creating model to find pattern inside our data and to make future prediction for business purpose. Additional steps prior to modeling maybe required to fine tune the conditions based on driver's inter-characteristics/features to maximize acceptance rate and reduce rejection rate across the coupon catagory.
