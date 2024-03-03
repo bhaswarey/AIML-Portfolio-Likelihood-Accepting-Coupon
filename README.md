@@ -1,6 +1,8 @@
 # Case Study : Conditional Acceptance of Coupon
 
-**Context**
+**[Link to notebook:] ** ![AIML-Portfolio-Likelihood-Accepting-Coupon/prompt.ipynb at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/prompt.ipynb) 
+
+**Context **
 
 Using the CRISP-DM model (as shown in Figure 1), the likelihood of customers acceptance of coupons during coupon campaigns run by the hospitality industry will be studied. In the series of studies, this is the first part of the study which focuses on all the phases covering up to "Data Preparation" phase of the CRISP-DM-DM.
 
@@ -501,7 +503,7 @@ Figure 7 provides the relationship between passenger & education/age/children/ma
 
 
 
-![AIML-Portfolio-Likelihood-Accepting-Coupon/images/histplot_accepted_carryaway_passanger_attributes.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/histplot_accepted_carryaway_passanger_attributes.png) 
+
 
 **Figure 7 - Relationship between passenger & education/age/children/marital status**
 
@@ -539,9 +541,161 @@ Figure 8 provides the conditional probability for occupation, income, education,
 
 
 
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_education.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_education.png) 
+
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_income.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_income.png) 
+
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_maritalstatus.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_maritalstatus.png) 
+
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_occupation.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_occupation.png) 
+
  ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_Education.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_Education.png) 
 
 
 
 **Figure 8 - Probability of accepting & rejecting offers base on independent condition**
+
+
+
+
+
+### 4.1.5.1   Observation 
+
+From the conditional probabilities shown in Figure 8, the following is observed:
+
+  **a) Occupation:**
+    The types that had the highest acceptance and the lowest rejections are (in no specific order):
+
+    1. Protective Services [0.17, 0.01]
+        
+    1. HealthPractTech [0.17, 0.01]
+        
+    1. ConstructExtraction [0.18, 0.01]
+        
+    1. BldGndCleaningMaintenance [0.2, ~0.0]
+        
+    1. ProdOccup [0.2, 0.03]
+        
+    Note: Selected top five.
+
+  **b) Income:**
+    The ranges that had the highest acceptance and the lowest rejections are (in no specific order):
+
+       1. ~$12K [0.15, 0.05], ~18K [0.14, 0.05], ~31K [0.15, 0.04]
+    1. ~56K [14, 0.04]
+        Note: Selected top four
+
+  **c) Education:**
+    The education level that had the highest acceptance and the lowest rejections are (in no specific order):
+
+       1. Some Highschool [0.17, 0.01]
+    1. Associate degree [0.15, 0.03]
+        Note: Selected top two
+
+  **d) MaritalStatus**
+    Marital status that had the highest acceptance and the lowest rejections are (in no specific order):
+    1.Widowed [0.16, 0.03]
+
+Based on these findings from the conditional plots, complex conditionals is defined by taking more than one features/characteristics. This approach will help to understand the interrelationship between these participants with the top acceptance.
+
+
+
+
+
+### 4.2   Identify Acceptance Rate Improvement Opportunities 
+
+Based on the observation in section 4.1.5.1 and taking into account findings in section 4.1.4.1, define possible opportunities and identify attributes to execute complex conditional probability based the analysis. 
+
+The attributes identified in section 4.1.4 has relatively higher probability of rejection to the attributes identified in section 4.1.5. This means that there are two approaches that can be taken to improve the chance of the acceptance rate:
+
+a) Reduce the rate of rejection in the attributes identified in section 4.1.4
+
+OR / AND
+
+b) Given a high acceptance relative to the rejection rate, increase the number of offers to the population with attributes identified in section 4.1.5. 
+
+Following are the refined attributes to investigate (as an example approach):
+
+​        A - Passanger Type - Alone
+
+​        B - Education - Some College or Bachelors or Graduate degree
+
+​        C - Age - < 37 years of age
+
+​        D - Occupation - Unemployed or Student
+
+​        E - Marital Status - Single or Divorced
+
+​        F - Combination - (Single or Divorced) and (Unemployed)
+
+​        G - Combination - (Single or Married) & (Bachelors or Graduate degree) & (< 37 years of age)
+
+Note: This is an example to demonstrate the strategy behind selection of these attributes and the combination is to understand the key characteristics to help drive down the rejection rate.   
+
+
+
+
+
+### 4.2.1   Complex Conditional Probability of Acceptance 
+
+Conditional probability of acceptance given the following defined conditionals:
+
+​        A - Coupon acceptance rate per condition
+
+​        B - Passanger Type - Alone
+
+​        C - Education - Some College or Bachelors or Graduate degree
+
+​        D - Age - < 37 years of age
+
+​        E - Occupation - Unemployed or Student
+
+​        F - Marital Status - Single or Divorced
+
+​        G - Combination - (Single or Divorced) and (Unemployed)
+
+​        H - Combination - (Single or Married) & (Bachelors or Graduate degree) & (< 37 years of age)
+
+​        I - Combination - (Single or Divorced) & (Bachelors or Graduate degree) & (< 37 years of age)
+
+  
+
+Figure 9 provides the results of the following conditional probabilities:
+
+           1. P(A|B)
+           2. P(A|C)
+           3. P(A|D)
+           4. (A|E)
+           5. P(A|F)
+           6. P(A|G)
+           7. P(A|H)
+           8. P(A|I)
+
+
+
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/histplot_complex_con_probability_coupon_attributes.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/histplot_complex_con_probability_coupon_attributes.png) 
+
+**Figure 9 - Probability of accepting & rejecting offers base on complex condition**
+
+
+
+
+
+### 5.0   Summary
+
+The conditional probability plots in section 8.2.4 provide insightful information. The results can be viewed from two angles:
+
+a) likelihood of acceptance of CarryAway relative to other coupon types, given a single driver/passenger characteristics
+
+b) likelihood of acceptance of CarryAway relative to other coupon types, given a combination of driver/passenger characteristics
+
+The first subplot which is the output of a single driver/passenger characteristic condition ("Passange == Alone") yields a lower likelihood of acceptance 0.73 compared to the last subplot where the condition takes multiple driver/passenger characteristics into account (complex condition), with a likelihood of 0.76.  The last two subplots, based on complex condition, yields a difference of 0.03 acceptance likelihood. This shows that it is important to understand the interrelationship between the driver/passenger characteristics to derive the right combination, maximizing the acceptance rate of the coupon campaign. 
+
+This approach will allow the business to define the right target audience, if they decide to increase the number of coupons distribution. They can take the approach of (right mix of driver/passenger characteristics) distribution, proportional to the coupon category.  In other words, the coupon distribution campaign will be targeted to participants who fit the defined combination of driver/passenger characteristics. This inturn will reduce wastage in coupon production and distribution overhead costs while maximizing acceptance rate revenue. 
+
+Additionally, to further improve the acceptance rate, the analysis based on complex conditional likelihood can focus on reducing the rejection rate by identifying driver/passenger characteristics of the population who would be excluded from offers of a specific type of coupon. 
+
+
+
+
 
