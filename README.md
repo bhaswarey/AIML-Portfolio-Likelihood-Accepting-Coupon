@@ -1,12 +1,12 @@
 # Case Study : Conditional Acceptance of Coupon
 
-**[Link to notebook:] ** [AIML-Portfolio-Likelihood-Accepting-Coupon/prompt.ipynb at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/prompt.ipynb) 
+[Link to notebook:]  [AIML-Portfolio-Likelihood-Accepting-Coupon/prompt.ipynb at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/prompt.ipynb) 
 
 
 
-**Context **
+## Context
 
-Using the CRISP-DM model (as shown in Figure 1), the likelihood of customers acceptance of coupons during coupon campaigns run by the hospitality industry will be studied. In the series of studies, this is the first part of the study which focuses on all the phases covering up to "Data Preparation" phase of the CRISP-DM-DM.
+Using the CRISP-DM model (as shown in Figure 1), the likelihood of customers’ acceptance of coupons during coupon offer campaigns run by the hospitality industry will be studied. This is the first part in the series of studies, focusing on all the phases covering up to "Data Preparation" phase of the CRISP-DM-DM.
 
  ![CRISP-DM.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/CRISP-DM.png) 
 
@@ -18,9 +18,9 @@ Using the CRISP-DM model (as shown in Figure 1), the likelihood of customers acc
 
 ## 1.1 Background
 
-Imagine driving through town and a coupon is delivered to your cell phone for a restaraunt near where you are driving. Would you accept that coupon and take a short detour to the restaraunt? Would you accept the coupon but use it on a sunbsequent trip? Would you ignore the coupon entirely? What if the coupon was for a bar instead of a restaraunt? What about a coffee house? Would you accept a bar coupon with a minor passenger in the car? What about if it was just you and your partner in the car? 
+Imagine driving through town and a coupon is delivered to your cell phone for a restaurant near where you are driving. Would you accept that coupon and take a short detour to the restaurant? Would you accept the coupon but use it on a subsequent trip? Would you ignore the coupon entirely? What if the coupon was for a bar instead of a restaurant? What about a coffee house? Would you accept a bar coupon with a minor passenger in the car? What about if it was just you and your partner in the car? 
 
-Obviously, proximity to the business is a factor on whether the coupon is delivered to the driver or not, but what are the factors that determine whether a driver accepts the coupon once it is delivered to them? What  are the relevant characteristics of the driver who is likely to accept a coupon?
+Obviously, proximity to the business is a factor on whether the coupon is delivered to the driver or not, but what are the factors that determine whether a driver accepts the coupon once it is delivered to them? What are the relevant characteristics of the driver who is likely to accept a coupon?
 
 
 
@@ -30,7 +30,7 @@ Obviously, proximity to the business is a factor on whether the coupon is delive
 
 
 
-Figure 2 provides a view of the distribution of the coupons offered to participants across the different types of business within the hospitality industry. The discribution in Figure 2 shows that the coupon campaign is skewed heavily towards the Coffee House businesses.
+Figure 2 provides a view of the distribution of the coupons offered to participants across the different types of business within the hospitality industry. The distribution in Figure 2 shows that the coupon campaign is skewed heavily towards the Coffee House businesses.
 
 
 
@@ -42,15 +42,13 @@ Figure 2 provides a view of the distribution of the coupons offered to participa
 
 Figure 3 - provides a view of the distribution accepted and rejected offers across the entire coupon category. The figure highlights the coupon types that have the highest acceptance and rejection rates, providing a view of where improvements are needed.
 
-
-
 In summary, the business problem is as follows:
 
-- Identify apportunities to improve acceptance rates of Bar and Coffee House based on the acceptance rate of the Carry out & Take away coupon.
+·    Identify opportunities to improve acceptance rates of Bar and Coffee House based on the acceptance rate of the Carry out & Take away coupon.
 
-- Identification of opportunities includes understanding the characteristics of the drivers with high acceptance rate.
+·    The characteristics of the drivers with high acceptance rate.
 
-   
+ 
 
 
 
@@ -58,34 +56,37 @@ In summary, the business problem is as follows:
 
 The business goal is to:
 
-- Gain insight on which one or more driver characteristics would yield high acceptance rate.
+·    Targeted offers to drivers with one or more characteristics that would improve the acceptance rate.
 
-- Reduce cost of rejected coupon (by eliminating production and distribution cost incurred during coupon campaigns)
+·    Reduce cost of rejected coupon (by eliminating production and distribution cost incurred during coupon offer campaigns).
 
-  
+
 
 # 2 Data Understanding
 
-On the **Data Understanding** phase, the data is described and explored to make sure it fits the business goals.
+This section provides information about the data, its description and is its exploration to make sure it fits the business goals.
 
 
 
-## 2.1 Gathering and Describing Data
+## 2.1 **Gathering and Describing Data**
 
-This data comes from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’.  There are five different types of coupons -- less expensive restaurants (under \\$20), coffee houses, carry out & take away, bar, and more expensive restaurants (\\$20 - \\$50).
+This data comes from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’. There are five different types of coupons -- less expensive restaurants (under \$20), coffee houses, carry out & take away, bar, and more expensive restaurants (\$20 - \$50).
 
-Here is a sample of the data.
+
 
 ![original.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/original.png?raw=true)
 
 
 
-The information about the structure of the data including:
+Here is a sample of the data, which provides information about the structure of the data including:
 
-- The number of rows (each row represent a single response data)
-- The number of column
-- The name of each column
-- The data type of each column
+·    The number of rows (each row represents a single response data)
+
+·    The number of columns
+
+·    The name of each column
+
+·    The data type of each column
 
 
 
@@ -149,7 +150,7 @@ The description of each attribute is as follows:
 
 ## 2.2 Early Data Exporation and Data Quality Check
 
-Next step is to check the quality of the data. For example, since many of the column/variable is categorical, the summary of the data can be checked for the types in each categories. By doing this, the step needed for data cleaning or to be transformed is identified. For example, check for missing/empty values.
+Next step is to check the quality of the data. For example, since many of the column/variable is categorical, the summary of the data is checked for the types in each category. By doing this, the step needed for data cleaning or to be transformed is identified. For example, checking for missing/empty values.
 
 Following is the summary statistics (mean, median, min, max, etc.) of the data:
 
@@ -260,7 +261,7 @@ Following is the summary statistics (mean, median, min, max, etc.) of the data:
 </table>
 
 
-Following is the catagory of each column that is of type object:
+Following is the category of each column that is of type object:
 
  ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/table1.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/table1.png) 
 
@@ -282,23 +283,23 @@ Following is the percentage of missing values per column:
 
 
 
-Finally, The number of **duplicate rows are 74**.
+Finally, The number of **duplicate rows is 74**.
 
 
 
-There are some interesting finding from the summary. For example, the there are a few columns like`car` that have nan (Unknown). The `expiration` column constains time in days and hours. The columns like`Bar` has ranges, for example, 4-8 or gt8, etc. The `occupation`column has very large stings. As a result, the data need to be cleansed and transformed followed by preparation before any analysis can be executed, so that all relevant information can be captured.
+There is some interesting finding from the summary. For example, the there are a few columns like car that have nan (Unknown). The expiration column contains time in days and hours. The columns like Bar has ranges, for example, 4-8 or gt8, etc. The occupation column has very large stings. As a result, the data need to be cleansed and transformed followed by preparation before any analysis can be executed, so that all relevant information can be captured.
 
 
 
 # 3 Data Preparation
 
-On the **Data Understanding** phase, the data is prepared and cleansed to allow for analysis in this as part of this case study and future case studies covering predictions.  
+This section provides information on data preparation and cleaning, to allow for analysis as part of this case study and the future case studies covering predictions.  
 
 
 
 ## 3.1 Data Transformation
 
-Following data attributes that will to be treated:
+Following data attributes that were treated:
 
 a) passanger - convert "Kid(s)" -> "Kid" & "Friend(s)" -> Friend
 
@@ -318,13 +319,13 @@ g) Shorten occupation strings
 
 ## 3.2 Data Cleansing
 
-On this process,  the data is handled based on the problem found during the data understanding phase. Based on the finding, the following process is executed:
+In this step, the data is handled based on the problem found during the data understanding phase. Based on the finding, the following steps are executed:
 
 a) If the percentage of missing values, per column, is >= 70%, then we will drop the entire column.
 
 b) If the percentage of missing values, per column, is < 30%, then keep the column and evaluate.
 
-c) For columns with missing values > 10%, the values will be filled using interpolation technique or mean or media or mode. Will depend on the data charastics. 
+c) For columns with missing values > 10%, the values will be filled using interpolation technique or mean or media or mode. Will depend on the data characters. 
 
 d) For columns with missing data <= 10%, the associated row will simply be dropped.
 
@@ -332,13 +333,13 @@ e) Finally, find and drop duplicate rows
 
 
 
-Post cleaning data view:
+**Post cleaned data view:**
 Index: 12007 entries, 22 to 12683
 Data columns (total 25 columns):
 
 
 
-After the data clean process was executed, the columns was reduced from **26 to 25** and the rows were reduced from **12683 to 12007**, i.e., As part of the cleaning process, number of rows are reduced by: **5.33%**.
+After the data clean process was executed, the columns was reduced from **26 to 25** and the rows were reduced from **12683 to 12007**, i.e., number of rows are reduced by **5.33%**.
 
  ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/table3.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/table3.png) 
 
@@ -348,9 +349,9 @@ After the data clean process was executed, the columns was reduced from **26 to 
 
 
 
-# 4 Data Understanding (Deeper Analysis)
+# 4 Data Understanding - Deep Analysis
 
-Further explore and analyze of the data is conducted in preparation for future machine learning model.
+This section provides information about deeper exploration and analysis of the data conducted, in preparation for future machine learning model.
 
 
 
@@ -372,29 +373,29 @@ Figure 4 provide the temperature during the distribution of coupon offer campaig
 
 
 
-Figure 5 provides a view of the accepted/rejected coupons and the associated temprature during that day.
+Figure 5-a provides a view of the accepted/rejected coupons and the associated temperature during that day.
 
 
 
 ! [AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature_accept_reject.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature_accept_reject.png) 
 
-**Figure 5 - Distribution of accepted/rejected coupons and associated temprature.**
+**Figure 5-a - Distribution of accepted/rejected coupons and associated temperature.**
 
 
 
-Figure 6 provides a view of the types of coupons that were offered and the associated temprature of the day.
+Figure 5-b provides a view of the types of coupons that were offered and the associated temperature of the day.
 
  ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/hist_temperature_coupons_types.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/hist_temperature_coupons_types.png) 
 
-**Figure 5 - Distribution of types of coupons and associated temprature.**
+**Figure 5-b - Distribution of types of coupons and associated temperature.**
 
 
 
-From the figures above, the number of coupon offered increase with the temperature. This indicates that as the weather warmed up, the outdoor activity increased. And as a result, there were more participents outside accepting offers. 
+From the figures above, the number of coupons offered increase with the temperature. This indicates that as the weather warmed up, the outdoor activity increased. And as a result, there were more participants outside accepting offers. 
 
 
 
-### 4.1.2 Addressing Bar Coupon related Business Questions
+### 4.1.2 Addressing Bar Coupon Business Questions
 
 Following were some of the business questions answered based on the analysis of the data.
 
@@ -449,7 +450,7 @@ Following were some of the business questions answered based on the analysis of 
 
 ### 4.1.3 Identification of Opportunities Based on Deep Data Analysis 
 
-Initial analysis of the data showed that the "Bar" performed poorly, i.e, the rejection rate was much higher then the acceptance rate. The "CarryAway" coupon acceptance to rejection rate was the best performer in the entire coupon catagories. Based on this observation, the following strategy was defined:
+Initial analysis of the data showed that the "Bar" performed poorly, i.e., the rejection rate was much higher than the acceptance rate. The "CarryAway" coupon acceptance to rejection rate was the best performer in the entire coupon categories. Based on this observation, the following strategy was defined:
 
 a) Study the "CarryAway" coupon type to help identify opportunities to improve coupon acceptance rate across all coupon categories
 
@@ -461,7 +462,7 @@ c) Identify opportunities to increase acceptance rate by examining the condition
 
 ### 4.1.3.1 Passanger/Driver Attribute Identify 
 
-Identify attributes associated with passenger's/driver's characteristics "CarryAway" coupon for study. Using the correlation approach, the correlation between the passenger/driver features/characteristics & coupon catagories is provided in Figure 6.
+Identify attributes associated with passenger's/driver's characteristics "CarryAway" coupon for study. Using the correlation approach, the correlation between the passenger/driver features/characteristics & coupon categories is provided in Figure 6.
 
 
 
@@ -473,23 +474,21 @@ Identify attributes associated with passenger's/driver's characteristics "CarryA
 
 ### 4.1.3.2 Observation   
 
- The moderate negative correlation could be an indication that the technique use for transformation of the attributes from string to integer/float may have introduced unintended anomalies, skewing the heatmap. For example, the "maritalStatus" attribute may not have been transformed correctly (i.e., data type has no defined order). One-hot-encoding is a powerful technique that can be used to treat categorical data, but it can lead to increased dimensionality, sparsity, and over-fitting.
+The moderate negative correlation could be an indication that the technique use for transformation of the attributes from string to integer/float may have introduced unintended anomalies, skewing the heatmap. For example, the "maritalStatus" attribute may not have been transformed correctly (i.e., data type has no defined order). One-hot-encoding is a powerful technique that can be used to treat categorical data, but it can lead to increased dimensionality, sparsity, and over-fitting.
 
 From the correlation data, the attributes selected for study are:
 
-​    a) income
+a) income
 
-​    b) maritalStatus
+b) maritalStatus
 
-​    c) has_children
+c) has_children
 
-​    d) education
+d) education
 
-​    e) age
+e) age
 
-​    f) occupation
-
-   
+f) occupation
 
 Next, lets understand the relationship between passenger types the selected attributes.
 
@@ -499,9 +498,7 @@ Next, lets understand the relationship between passenger types the selected attr
 
 Identify the passenger/driver characteristics features based on the accepted "carryAway" coupon population.
 
-
-
-Figure 7 provides the relationship between passenger & education/age/children/marital status, from the population of accepted  "CarryAway" coupon.
+Figure 7 provides the relationship between passenger & education/age/children/marital status, from the population of accepted "CarryAway" coupon.
 
 
 
@@ -515,41 +512,39 @@ Figure 7 provides the relationship between passenger & education/age/children/ma
 
 ### 4.1.4.1   Observation 
 
-​    From Figure 7, the attributes observed to have independently-highest acceptance are:
+From Figure 7, the attributes observed to have independently-highest acceptance are:
 
-​    a) Passange Type  - Alone
+a) Passange Type - Alone
 
-​    b) Education (top 2) - Some College or Bachelors
+b) Education (top 2) - Some College or Bachelors
 
-​    c) Age - < 37 years of age
+c) Age - < 37 years of age
 
-​    d) Marital Status - Single
+d) Marital Status - Single
 
-​    e) Income - (< 20K) followed by (90K - 100K) followed by (30K - 55K). When grouped, majority would fall in the range of 10k - 55K & 90K - 100K
+e) Income - (< 20K) followed by (90K - 100K) followed by (30K - 55K). When grouped, majority would fall in the range of 10k - 55K & 90K - 100K
 
-​    f) Occupation (top 4) - Student, Unemployed, ComputerMath, SalesRelated
-
-
+f) Occupation (top 4) - Student, Unemployed, ComputerMath, SalesRelated
 
 
 
-### 4.1.5   Probability of Accepting/Rejecting Independent Conditions
+
+
+### 4.1.5   Independent Conditions - Probability of Accepting/Rejecting 
 
 Examine the probability of accepting/rejecting CarryAway coupon given the user's/driver's occupation, income, education, and marital status features. These features will be examined as independent conditions.
-
-
 
 Figure 8 provides the conditional probability for occupation, income, education, and marital status features.
 
 
 
- ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_education.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_education.png) 
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_education.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_education1.png) 
 
- ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_income.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_income.png) 
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_income.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_income1.png) 
 
- ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_maritalstatus.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_maritalstatus.png) 
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_maritalstatus.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_maritalstatus1.png) 
 
- ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_occupation.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_occupation.png) 
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_occupation.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_occupation1.png) 
 
 
 
@@ -563,43 +558,41 @@ Figure 8 provides the conditional probability for occupation, income, education,
 
 From the conditional probabilities shown in Figure 8, the following is observed:
 
-  **a) Occupation:**
-    The types that had the highest acceptance and the lowest rejections are (in no specific order):
+**a) Occupation:** The types that had the highest acceptance and the lowest rejections are (in no specific order):
 
-- Protective Services [0.17, 0.01]
-- HealthPractTech [0.17, 0.01]
-- ConstructExtraction [0.18, 0.01]
-- BldGndCleaningMaintenance [0.2, ~0.0]
-- ProdOccup [0.2, 0.03]
+·    Protective Services [0.17, 0.01]
+
+·    HealthPractTech [0.17, 0.01]
+
+·    ConstructExtraction [0.18, 0.01]
+
+·    BldGndCleaningMaintenance [0.2, ~0.0]
+
+·    ProdOccup [0.2, 0.03]
 
 Note: Selected top five.
 
-  **b) Income:**
-    The ranges that had the highest acceptance and the lowest rejections are (in no specific order):
+**b) Income:** The ranges that had the highest acceptance and the lowest rejections are (in no specific order):
 
-- ~$12K [0.15, 0.05], ~18K [0.14, 0.05], ~31K [0.15, 0.04]
-- ~56K [14, 0.04]
-  Note: Selected top four
+·    ~$12K [0.15, 0.05], ~18K [0.14, 0.05], ~31K [0.15, 0.04]
 
-  **c) Education:**
-    The education level that had the highest acceptance and the lowest rejections are (in no specific order):
+·    ~56K [14, 0.04] Note: Selected top four
 
-- Some Highschool [0.17, 0.01]
-- Associate degree [0.15, 0.03]
-  Note: Selected top two
+**c) Education:** The education level that had the highest acceptance and the lowest rejections are (in no specific order):
 
-  **d) MaritalStatus**
-    Marital status that had the highest acceptance and the lowest rejections are (in no specific order):
+·    Some Highschool [0.17, 0.01]
 
-- Widowed [0.16, 0.03]
+·    Associate degree [0.15, 0.03] Note: Selected top two
+
+**d) MaritalStatus** Marital status that had the highest acceptance and the lowest rejections are (in no specific order):
+
+·    Widowed [0.16, 0.03]
 
 Based on these findings from the conditional plots, complex conditionals is defined by taking more than one features/characteristics. This approach will help to understand the interrelationship between these participants with the top acceptance.
 
 
 
-
-
-### 4.2   Identify Acceptance Rate Improvement Opportunities 
+### 4.2   Identify Opportunities - Acceptance Rate Improvement  
 
 Based on the observation in section 4.1.5.1 and taking into account findings in section 4.1.4.1, define possible opportunities and identify attributes to execute complex conditional probability based the analysis. 
 
@@ -613,23 +606,21 @@ b) Given a high acceptance relative to the rejection rate, increase the number o
 
 Following are the refined attributes to investigate (as an example approach):
 
-​        A - Passanger Type - Alone
+A - Passanger Type - Alone
 
-​        B - Education - Some College or Bachelors or Graduate degree
+B - Education - Some College or Bachelors or Graduate degree
 
-​        C - Age - < 37 years of age
+C - Age - < 37 years of age
 
-​        D - Occupation - Unemployed or Student
+D - Occupation - Unemployed or Student
 
-​        E - Marital Status - Single or Divorced
+E - Marital Status - Single or Divorced
 
-​        F - Combination - (Single or Divorced) and (Unemployed)
+F - Combination - (Single or Divorced) and (Unemployed)
 
-​        G - Combination - (Single or Married) & (Bachelors or Graduate degree) & (< 37 years of age)
+G - Combination - (Single or Married) & (Bachelors or Graduate degree) & (< 37 years of age)
 
-Note: This is an example to demonstrate the strategy behind selection of these attributes and the combination is to understand the key characteristics to help drive down the rejection rate.   
-
-
+Note: This is an example to demonstrate the strategy behind selection of the attributes and their combination, understanding the key characteristics to help drive down the rejection rate.  
 
 
 
@@ -637,38 +628,43 @@ Note: This is an example to demonstrate the strategy behind selection of these a
 
 Conditional probability of acceptance given the following defined conditionals:
 
-​        A - Coupon acceptance rate per condition
+A - Coupon acceptance rate per condition
 
-​        B - Passanger Type - Alone
+B - Passanger Type - Alone
 
-​        C - Education - Some College or Bachelors or Graduate degree
+C - Education - Some College or Bachelors or Graduate degree
 
-​        D - Age - < 37 years of age
+D - Age - < 37 years of age
 
-​        E - Occupation - Unemployed or Student
+E - Occupation - Unemployed or Student
 
-​        F - Marital Status - Single or Divorced
+F - Marital Status - Single or Divorced
 
-​        G - Combination - (Single or Divorced) and (Unemployed)
+G - Combination - (Single or Divorced) and (Unemployed)
 
-​        H - Combination - (Single or Married) & (Bachelors or Graduate degree) & (< 37 years of age)
+H - Combination - (Single or Married) & (Bachelors or Graduate degree) & (< 37 years of age)
 
-​        I - Combination - (Single or Divorced) & (Bachelors or Graduate degree) & (< 37 years of age)
-
-  
+I - Combination - (Single or Divorced) & (Bachelors or Graduate degree) & (< 37 years of age)
 
 Figure 9 provides the results of the following conditional probabilities:
 
-           1. P(A|B)
-           2. P(A|C)
-           3. P(A|D)
-           4. P(A|E)
-           5. P(A|F)
-           6. P(A|G)
-           7. P(A|H)
-           8. P(A|I)
+​    1. P(A|B)
 
+​    2. P(A|C)
 
+​    3. P(A|D)
+
+​    4. P(A|E)
+
+​    5. P(A|F)
+
+​    6. P(A|G)
+
+​    7. P(A|H)
+
+   8. P(A|I)
+
+      
 
  ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/histplot_complex_con_probability_coupon_attributes.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/histplot_complex_con_probability_coupon_attributes.png) 
 
@@ -676,26 +672,22 @@ Figure 9 provides the results of the following conditional probabilities:
 
 
 
-
-
 ### 5.0   Summary
 
 The conditional probability plots in section 8.2.4 provide insightful information. The results can be viewed from two angles:
 
-a) likelihood of acceptance of CarryAway relative to other coupon types, given a single driver/passenger characteristics
+a) likelihood of acceptance of CarryAway relative to other coupon types, given a single driver/passenger characteristic.
 
-b) likelihood of acceptance of CarryAway relative to other coupon types, given a combination of driver/passenger characteristics
+b) likelihood of acceptance of CarryAway relative to other coupon types, given a combination of driver/passenger characteristics.
 
-The first subplot which is the output of a single driver/passenger characteristic condition ("Passange == Alone") yields a lower likelihood of acceptance 0.73 compared to the last subplot where the condition takes multiple driver/passenger characteristics into account (complex condition), with a likelihood of 0.76.  The last two subplots, based on complex condition, yields a difference of 0.03 acceptance likelihood. This shows that it is important to understand the interrelationship between the driver/passenger characteristics to derive the right combination, maximizing the acceptance rate of the coupon campaign. 
+The first subplot which is the output of a single driver/passenger characteristic condition ("Passange == Alone") yields a lower likelihood of acceptance 0.73 compared to the last subplot where the condition takes multiple driver/passenger characteristics into account (complex condition), with a likelihood of 0.76. The last two subplots, based on complex condition, yields a difference of 0.03 acceptance likelihood. This shows that it is important to understand the interrelationship between the driver/passenger characteristics to derive the right combination, maximizing the acceptance rate of the coupon campaign. 
 
-This approach will allow the business to define the right target audience, if they decide to increase the number of coupons distribution. They can take the approach of (right mix of driver/passenger characteristics) distribution, proportional to the coupon category.  In other words, the coupon distribution campaign will be targeted to participants who fit the defined combination of driver/passenger characteristics. This inturn will reduce wastage in coupon production and distribution overhead costs while maximizing acceptance rate revenue. 
+If the business decide to increase the number of coupons distribution then this approach will help identify the appropriate target audience. The business can take the approach of “right mix of driver/passenger characteristics” distribution, proportional to the coupon category. In other words, the coupon distribution campaign will be targeted to participants who fit the defined combination of driver/passenger characteristics. This in turn will reduce wastage in coupon production and distribution overhead costs while maximizing acceptance rate revenue. 
 
 Additionally, to further improve the acceptance rate, the analysis based on complex conditional likelihood can focus on reducing the rejection rate by identifying driver/passenger characteristics of the population who would be excluded from offers of a specific type of coupon. 
 
 
 
+### 6.0   Next Steps
 
-
-### 5.0   Next Steps
-
-Given the insights from the data analysis and the conditional probability approach taken, we are not ready to enter the next phase to start creating model to find pattern inside our data and to make future prediction for business purpose. Additional steps prior to modeling maybe required to fine tune the conditions based on driver's inter-characteristics/features to maximize acceptance rate and reduce rejection rate across the coupon catagory.
+The insights gained from the data analysis and the conditional probability approach provided, sets the stage for this study to be followed up with the next phase, i.e., to start creating model to find pattern inside our data and to make future prediction for business purpose. As part of the next steps, additional steps maybe taken to fine-tune the definition of the conditions, based on driver's inter-characteristics/features, to maximize acceptance rate and reduce rejection rate across the coupon category.
