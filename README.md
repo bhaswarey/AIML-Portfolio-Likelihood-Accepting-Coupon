@@ -549,8 +549,6 @@ Figure 8 provides the conditional probability for occupation, income, education,
 
  ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_occupation.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_occupation.png) 
 
- ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/catplot_accept_reject_Education.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/catplot_accept_reject_Education.png) 
-
 
 
 **Figure 8 - Probability of accepting & rejecting offers base on independent condition**
