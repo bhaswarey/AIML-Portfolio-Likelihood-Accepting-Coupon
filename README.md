@@ -491,7 +491,7 @@ Next, lets understand the relationship between passenger types the selected attr
 
 
 
-### 4.1.3.2   Passenger/Driver Characteristics Features of The Accepted "CarryAway" Coupon Population
+### 4.1.4   Passenger/Driver Characteristics Features of The Accepted "CarryAway" Coupon Population
 
 Identify the passenger/driver characteristics features based on the accepted "carryAway" coupon population.
 
@@ -500,4 +500,46 @@ Identify the passenger/driver characteristics features based on the accepted "ca
 Figure 7 provides the relationship between passenger & education/age/children/marital status, from the population of accepted  "CarryAway" coupon.
 
 
+
+![AIML-Portfolio-Likelihood-Accepting-Coupon/images/histplot_accepted_carryaway_passanger_attributes.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/histplot_accepted_carryaway_passanger_attributes.png) 
+
+**Figure 7 - Relationship between passenger & education/age/children/marital status**
+
+
+
+
+
+### 4.1.4.1   Observation 
+
+​    From Figure 7, the attributes observed to have independently-highest acceptance are:
+
+​    a) Passange Type  - Alone
+
+​    b) Education (top 2) - Some College or Bachelors
+
+​    c) Age - < 37 years of age
+
+​    d) Marital Status - Single
+
+​    e) Income - (< 20K) followed by (90K - 100K) followed by (30K - 55K). When grouped, majority would fall in the range of 10k - 55K & 90K - 100K
+
+​    f) Occupation (top 4) - Student, Unemployed, ComputerMath, SalesRelated
+
+
+
+
+
+### 4.1.5   Probability of Accepting/Rejecting Independent Conditions
+
+Examine the probability of accepting/rejecting CarryAway coupon given the user's/driver's occupation, income, education, and marital status features. These features will be examined as independent conditions.
+
+
+
+Figure 8 provides the conditional probability for occupation, income, education, and marital status features.
+
+
+
+
+
+**Figure 7 - Probability of accepting & rejecting offers base on independent condition**
 
