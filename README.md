@@ -457,11 +457,47 @@ c) Identify opportunities to increase acceptance rate by examining the condition
 
 ### 4.1.3.1 Passanger/Driver Attribute Identify 
 
-Identify attributes associated with passenger's/driver's characteristics "CarryAway" coupon for study, using the correlation approach.
+Identify attributes associated with passenger's/driver's characteristics "CarryAway" coupon for study. Using the correlation approach, the correlation between the passenger/driver features/characteristics & coupon catagories is provided in Figure 6.
 
 
 
+ ![AIML-Portfolio-Likelihood-Accepting-Coupon/images/heatmap_attributes_coupons.png at main · bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/heatmap_attributes_coupons.png) 
 
+**Figure 6 - Heatmap of passenger/driver features/characteristics & coupon catagories**
+
+
+
+### 4.1.3.2 Observation   
+
+ The moderate negative correlation could be an indication that the technique use for transformation of the attributes from string to integer/float may have introduced unintended anomalies, skewing the heatmap. For example, the "maritalStatus" attribute may not have been transformed correctly (i.e., data type has no defined order). One-hot-encoding is a powerful technique that can be used to treat categorical data, but it can lead to increased dimensionality, sparsity, and over-fitting.
+
+From the correlation data, the attributes selected for study are:
+
+​    a) income
+
+​    b) maritalStatus
+
+​    c) has_children
+
+​    d) education
+
+​    e) age
+
+​    f) occupation
+
+   
+
+Next, lets understand the relationship between passenger types the selected attributes.
+
+
+
+### 4.1.3.2   Passenger/Driver Characteristics Features of The Accepted "CarryAway" Coupon Population
+
+Identify the passenger/driver characteristics features based on the accepted "carryAway" coupon population.
+
+
+
+Figure 7 provides the relationship between passenger & education/age/children/marital status, from the population of accepted  "CarryAway" coupon.
 
 
 
