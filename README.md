@@ -332,38 +332,6 @@ Post cleaning data view:
 Index: 12007 entries, 22 to 12683
 Data columns (total 25 columns):
 
- #    
-
-**Column				Non-Null Count 			Type**	
-
----  ------                --------------  -----
- **0   destination           		12007 non-null  			object 
- 1   passanger             		12007 non-null  			object 
- 2   weather               		  12007 non-null  			object 
- 3   temperature           	      12007 non-null                          int64  
- 4   time                  		      12007 non-null 		        int64  
- 5   coupon                		  12007 non-null  			object 
- 6   expiration            		 12007 non-null  		        int64  
- 7   gender                		  12007 non-null  		         object 
- 8   age                   		      12007 non-null  			int64  
- 9   maritalStatus         	       12007 non-null  			object 
- 10  has_children          	      12007 non-null  			int64  
- 11  education             		12007 non-null  			object 
- 12  occupation            		12007 non-null  		      object 
- 13  income                		  12007 non-null  		       int64  
- 14  Bar                   		      12007 non-null  		       float64
- 15  CoffeeHouse           	     12007 non-null  		       float64
- 16  CarryAway             		12007 non-null  		      float64
- 17  RestaurantLessThan20       12007 non-null  		      float64
- 18  Restaurant20To50      	 12007 non-null  	              float64
- 19  toCoupon_GEQ5min            12007 non-null  		     int64  
- 20  toCoupon_GEQ15min          12007 non-null  		     int64  
- 21  toCoupon_GEQ25min          12007 non-null 		      int64  
- 22  direction_same        	     12007 non-null  		      int64  
- 23  direction_opp         	       12007 non-null  	              int64  
- 24  Y                     			  12007 non-null  		      int64  
-dtypes: float64(5), int64(12), object(8)**
-
 
 
 After the data clean process was executed, the columns was reduced from **26 to 25** and the rows were reduced from **12683 to 12007**, i.e., As part of the cleaning process, number of rows are reduced by: **5.33%**.
