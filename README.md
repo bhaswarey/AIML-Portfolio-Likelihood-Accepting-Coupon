@@ -46,7 +46,7 @@ In summary, the business problem is as follows:
 
 ·    Identify opportunities to improve acceptance rates of Bar and Coffee House based on the acceptance rate of the Carry out & Take away coupon.
 
-·    The characteristics of the drivers with high acceptance rate.
+·    The characteristics of the drivers with high acceptance rate. Note that the Carry out & Take away coupon has the best acceptance to rejection ratio.
 
  
 
