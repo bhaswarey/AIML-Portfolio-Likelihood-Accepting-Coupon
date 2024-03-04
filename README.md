@@ -6,7 +6,7 @@
 
 ## Context
 
-Using the CRISP-DM model (as shown in Figure 1), the likelihood of customers’ acceptance of coupons during coupon offer campaigns run by the hospitality industry will be studied. This is the first part in the series of studies, focusing on all the phases covering up to "Data Preparation" phase of the CRISP-DM-DM.
+The goal of this project is to predict the likelihood of customers’ acceptance of coupons during campaigns run by the hospitality industry. This is the first part in the series of studies, focusing on all the phases covering up to "Data Preparation" phase in the CRISP-DM-DM process (see Figure 1).
 
  ![CRISP-DM.png](https://github.com/bhaswarey/AIML-Portfolio-Likelihood-Accepting-Coupon/blob/main/images/CRISP-DM.png) 
 
