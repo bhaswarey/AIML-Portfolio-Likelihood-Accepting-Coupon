@@ -460,7 +460,7 @@ c) Identify opportunities to increase acceptance rate by examining the condition
 
 
 
-### 4.1.3.1 Passanger/Driver Attribute Identify 
+### 4.1.3.1 Passenger/Driver Attribute Identify 
 
 Identify attributes associated with passenger's/driver's characteristics "CarryAway" coupon for study. Using the correlation approach, the correlation between the passenger/driver features/characteristics & coupon categories is provided in Figure 6.
 
